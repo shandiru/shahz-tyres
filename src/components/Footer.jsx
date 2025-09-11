@@ -22,12 +22,12 @@ export default function SiteFooter() {
           {/* Brand */}
           <div>
             <h3 className="text-xl font-bold tracking-wide text-white">
-              STONELEY&apos;S GARAGE SERVICES
+            Shahz Tyres
             </h3>
-            <p className="text-sm mt-3" style={{ color: palette.muted }}>
+            {/* <p className="text-sm mt-3" style={{ color: palette.muted }}>
               Family-run garage established 1973. Professional automotive
               services for cars, commercial vehicles, and motorhomes.
-            </p>
+            </p> */}
           </div>
 
           {/* Contact Info */}
@@ -42,7 +42,7 @@ export default function SiteFooter() {
                 style={{ color: palette.muted }}
               >
                 <FaPhone className="h-4 w-4" style={{ color: palette.neonGreen }} />
-                +44 1623 623759
+                +44 162365615
               </a>
               <a
                 href="https://www.google.com/maps/place/Stoneley's+Garage+Services"
@@ -52,7 +52,7 @@ export default function SiteFooter() {
                 style={{ color: palette.muted }}
               >
                 <FaMapMarkerAlt className="h-4 w-4" style={{ color: palette.softGreen }} />
-                Stoneley&apos;s Garage, Hamilton Way, Mansfield NG18 5BU, UK
+                
               </a>
             </div>
           </div>
@@ -64,12 +64,9 @@ export default function SiteFooter() {
             </h4>
             <ul className="space-y-2 text-sm">
               {[
-                ["MOT Testing & Car Servicing", "/services/car-service"],
-                ["Wheel Alignment & Tyre Fitting", "/services/wheel-alignment"],
-                ["Brakes, Exhausts & Clutches", "/services/brakes-exhausts-clutches"],
-                ["Engine Cleaning Services", "/services/cleaning"],
-                ["Air Conditioning Service", "/services/air-con"],
-                ["Commercial Vehicle Repairs", "/services/commercial-repairs"],
+                ["Tyres", "/tyres"],
+                ["Car Welding", "/car-welding"],
+                ["Home Welding", "/home-welding"],
               ].map(([label, href], i) => (
                 <li key={i}>
                   <a
@@ -91,8 +88,8 @@ export default function SiteFooter() {
         {/* Bottom note */}
         <div className="pt-6 text-center">
           <p className="text-sm" style={{ color: palette.dim }}>
-            © {new Date().getFullYear()} Stoneley&apos;s Garage Services. All rights
-            reserved. | Established 1973
+            © {new Date().getFullYear()} Shahz Tyres Services. All rights
+            reserved.
           </p>
         </div>
       </div>
