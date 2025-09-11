@@ -11,47 +11,33 @@ import {
 export default function WheelAlignmentServices() {
   const services = [
     {
-      title: "4-Wheel Laser Alignment",
-      desc: "Precision laser technology ensures accurate wheel positioning for optimal vehicle performance",
+      title: "Tyre Fitting",
+      desc: "Professional tyre fitting service with proper balancing and alignment for optimal performance.",
       icon: <FaBullseye className="h-5 w-5 text-[var(--aircon-icon)]" />,
       points: [
-        "Laser precision measurement",
-        "All four wheels aligned",
-        "Computer-guided accuracy",
-        "Detailed printout provided",
+        "Expert installation",
+        "Wheel balancing",
+        "Valve replacement",
       ],
     },
     {
-      title: "3D Wheel Alignment",
-      desc: "Advanced 3D imaging technology for comprehensive wheel geometry analysis",
+      title: "Tyre Repairs",
+      desc: "Quick and reliable tyre repair services to get you back on the road safely.",
       icon: <FaTachometerAlt className="h-5 w-5 text-[var(--aircon-icon)]" />,
       points: [
-        "3D imaging technology",
-        "Real-time measurements",
-        "Comprehensive analysis",
-        "Before/after comparison",
+        "Puncture repairs",
+        "Sidewall damage assessment",
+        "Emergency repairs",
       ],
     },
     {
-      title: "Castor & Camber Adjustment",
-      desc: "Professional adjustment of wheel angles for improved handling and tyre wear",
+      title: "Wheel Alignment",
+      desc: "Precision wheel alignment service to ensure even tyre wear and optimal handling.",
       icon: <FaWrench className="h-5 w-5 text-[var(--aircon-icon)]" />,
       points: [
-        "Castor angle correction",
-        "Camber adjustment",
-        "Toe alignment",
-        "Steering wheel centering",
-      ],
-    },
-    {
-      title: "Full Geometry Alignment",
-      desc: "Complete 4-wheel geometry alignment service for all vehicle types",
-      icon: <FaCar className="h-5 w-5 text-[var(--aircon-icon)]" />,
-      points: [
-        "Complete geometry check",
-        "All angles adjusted",
-        "Commercial vehicles",
-        "Motorhome alignment",
+        "4-wheel alignment",
+        "Tracking adjustment",
+        "Camber correction",
       ],
     },
   ];
@@ -62,16 +48,12 @@ export default function WheelAlignmentServices() {
         {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-heading font-bold text-[var(--aircon-heading)] mb-4">
-            Professional Wheel Alignment Services
+            Our Tyre Services
           </h2>
-          <p className="text-lg text-[var(--aircon-muted)] font-body max-w-2xl mx-auto">
-            Advanced alignment technology for precise wheel positioning and
-            optimal vehicle performance
-          </p>
         </div>
 
         {/* Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((s, i) => (
             <div
               key={i}

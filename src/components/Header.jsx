@@ -7,9 +7,9 @@ export default function Navbar() {
   const [servicesOpen, setServicesOpen] = useState(false);
 
   const services = [
-    { name: "Tyres", href: "tyres" },
-    { name: "Car Welding", href: "car-welding" },
-    { name: "Home Welding", href: "home-welding" },
+    { name: "Tyres", href: "/tyres" },
+    { name: "Car Welding", href: "/car-welding" },
+    { name: "Home Welding", href: "/home-welding" },
   ];
 
   return (

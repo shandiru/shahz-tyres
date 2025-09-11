@@ -6,6 +6,7 @@ import WheelAlignmentServices from "../components/ServiceSection/WheelAlignmentP
 import TyreServices from "../components/ServiceSection/WheelAlignmentPage/TyreServices";
 import WhyAlignmentSection from "../components/ServiceSection/WheelAlignmentPage/WhyAlignmentSection";
 import EmergencyCTA from "../components/ServiceSection/WheelAlignmentPage/EmergencyCTA";
+import SeasonalTyreChangeovers from "../components/ServiceSection/WheelAlignmentPage/SeasonalTyreChangeovers";
 
 export default function Home() {
   return (
@@ -23,7 +24,9 @@ export default function Home() {
         <section >
        <WhyAlignmentSection />
       </section>
-
+      <section>
+        <SeasonalTyreChangeovers />
+      </section>
        <section >
        <EmergencyCTA />
       </section>

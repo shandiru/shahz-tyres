@@ -16,14 +16,14 @@ export default function WheelTyreHero() {
           <span
             className="
               inline-flex items-center justify-center rounded-md px-2 py-0.5
-              text-xs font-medium mb-4
+              text-xs font-medium mb-4 mt-10
             "
             style={{
               backgroundColor: "var(--aircon-badge-bg)",
               color: "var(--aircon-badge-text)",
             }}
           >
-            Professional Wheel Services
+            Professional Tyre Services
           </span>
 
           {/* Heading */}
@@ -33,8 +33,7 @@ export default function WheelTyreHero() {
               text-[var(--aircon-heading)]
             "
           >
-            Wheel Alignment &amp;{" "}
-            <span className="text-[var(--aircon-primary)]">Tyre Services</span>
+           Tyre Services
           </h1>
 
           {/* Sub Copy */}
@@ -44,9 +43,7 @@ export default function WheelTyreHero() {
               text-[var(--aircon-muted)]
             "
           >
-            Precision wheel alignment and professional tyre services using
-            advanced laser and 3D technology. Keep your vehicle running safely
-            and efficiently with our expert technicians.
+            Professional tyre fitting, balancing, and alignment services for all vehicle types. We stock a wide range of premium tyres and offer competitive prices with expert installation.
           </p>
 
           {/* Actions */}
@@ -65,7 +62,7 @@ export default function WheelTyreHero() {
                 "
               >
                 <FaPhoneAlt className="h-5 w-5" />
-                Book Service: +441623623759
+                WhatsApp Us
               </button>
             </a>
 
@@ -84,7 +81,7 @@ export default function WheelTyreHero() {
                 dark:focus-visible:ring-offset-[var(--aircon-grad-top-dark)]
               "
             >
-              Get Free Quote
+              Get Tyre Quote
             </button>
           </div>
         </div>
