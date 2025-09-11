@@ -2,11 +2,11 @@ import React from "react";
 
 // Sections from components/contactPage
 import TyreServicesHero from "../components/ServiceSection/TyresPage/TyreServicesHero";
-import MobileWeldingServices from "../components/ServiceSection/HomeweldingPage/MobileWeldingServices"
-import ServiceAreas from "../components/ServiceSection/HomeweldingPage/ServiceAreas"
-import HowItWorks from "../components/ServiceSection/HomeweldingPage/HowItWorks"
-import CtaSection from "../components/ServiceSection/HomeweldingPage/CtaSection"
-
+import TyreServices from "../components/ServiceSection/TyresPage/TyreServices"
+import PremiumTyreBrands from "../components/ServiceSection/TyresPage/PremiumTyreBrands"
+import TyreBalancing from "../components/ServiceSection/TyresPage/TyreBalancing"
+import SeasonalTyreChangeovers from "../components/ServiceSection/TyresPage/SeasonalTyreChangeovers"
+import TyreCtaSection from "../components/ServiceSection/TyresPage/TyreCtaSection"
 export default function Tyres() {
   return (
     <>
@@ -16,19 +16,22 @@ export default function Tyres() {
     </div>
 
     <div>
-        <MobileWeldingServices />
+        <TyreServices />
     </div>
     
     <div>
-        <ServiceAreas />
+        <PremiumTyreBrands />
     </div>
 
     <div>
-        <HowItWorks />
+        <TyreBalancing />
     </div>
 
     <div>
-        <CtaSection />
+        <SeasonalTyreChangeovers/>
+    </div>
+    <div>
+      <TyreCtaSection />
     </div>
     </>
     
