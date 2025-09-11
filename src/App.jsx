@@ -12,7 +12,7 @@ import CarServicePage from "./Page/CarServicePage.jsx";
 import CleaningPage from "./Page/CleaningPage.jsx";
 import DiagnosticsPage from "./Page/DiagnosticsPage.jsx";
 import About from "./Page/AboutPage.jsx";
-
+import Homewel from "./Page/HomeweldingPage.jsx";
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -22,12 +22,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
            <Route path="/about" element={<About />} />
-          <Route path="/services/wheel-alignment" element={<Wheelalignment />} />
-          <Route path="/services/air-con" element={<AirConPage />} />
-          <Route path="/services/car-service" element={<CarServicePage />} />
-          <Route path="/services/cleaning" element={<CleaningPage />} />
-           <Route path="/services/diagnostics" element={<DiagnosticsPage />} />
-        
+            <Route path="/home-welding" element={<Homewel />} />
+         
 
         
         </Routes>

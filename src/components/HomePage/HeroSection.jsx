@@ -4,8 +4,8 @@ import { FiChevronDown } from "react-icons/fi";
 
 export default function HeroSection() {
   return (
-    <div className="min-h-screen bg-slate-900">
-      <section className="relative min-h-screen flex items-center px-6 lg:px-16">
+    <div className="bg-slate-900">
+      <section className="relative min-h-screen flex items-center px-6 lg:px-16 pt-24 sm:pt-0">
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/90 to-transparent z-10" />
 
