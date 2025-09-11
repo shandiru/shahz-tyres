@@ -4,20 +4,36 @@ import React from "react";
 export default function TyreServices() {
   const services = [
     {
-      title: "Professional Tyre Fitting",
-      desc: "Expert tyre installation with proper mounting and sealing",
+      title: "Michelin",
+      desc: "Premium quality tyres",
     },
     {
-      title: "Wheel Balancing",
-      desc: "Precision wheel balancing to eliminate vibration and ensure smooth driving",
+      title: "Bridgestone",
+      desc: "Premium quality tyres",
     },
     {
-      title: "Tyre Pressure Check",
-      desc: "Free tyre pressure monitoring and adjustment service",
+      title: "Continental",
+      desc: "Premium quality tyres",
     },
     {
-      title: "Tyre Condition Assessment",
-      desc: "Professional inspection for wear patterns and safety concerns",
+      title: "Pirelli",
+      desc: "Premium quality tyres",
+    },
+    {
+      title: "Goodyear",
+      desc: "Premium quality tyres",
+    },
+    {
+      title: "Dunlop",
+      desc: "Premium quality tyres",
+    },
+    {
+      title: "Hankook",
+      desc: "Premium quality tyres",
+    },
+    {
+      title: "Falken",
+      desc: "Premium quality tyres",
     },
   ];
 
@@ -29,14 +45,8 @@ export default function TyreServices() {
           <h2
             className="font-heading font-bold tracking-tight mb-3 text-4xl md:text-5xl text-[var(--aircon-heading)]"
           >
-            Professional Tyre Services
+            Premium Tyre Brands
           </h2>
-          <p
-            className="text-base md:text-lg font-body max-w-3xl mx-auto text-[var(--aircon-muted)]"
-          >
-            Expert tyre fitting, balancing, and maintenance services for all
-            vehicle types
-          </p>
         </div>
 
         {/* Cards */}
@@ -60,28 +70,27 @@ export default function TyreServices() {
                   {s.desc}
                 </p>
               </div>
-
-              <div className="mt-8">
-                {/* Use primary/check token for any price/accent text if needed later */}
-                <div className="text-xl font-semibold mb-5 text-center text-[var(--aircon-primary)]"></div>
-
-                <button
-                  className="
-                    w-full h-11 rounded-md text-sm font-semibold
-                    border bg-[var(--aircon-button-bg)] text-[var(--aircon-heading)] border-[var(--aircon-outline)]
-                    transition-all duration-300
-                    hover:bg-[var(--aircon-grad-bottom)] hover:shadow-[0_6px_18px_rgba(47,125,51,0.35)]
-                    hover:ring-1 hover:ring-[var(--aircon-primary)] hover:ring-offset-1
-                    focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--aircon-primary)]
-                    focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--aircon-section-bg)]
-                  "
-                >
-                  Learn More
-                </button>
-              </div>
             </div>
           ))}
+
         </div>
+        <p className="font-heading font-bold mt-10 tracking-tight mb-3 text-xl text-center text-[var(--aircon-heading)]">Can't find the tyre you need? We can order any specific tyre for you!</p>
+        <div className="mt-10 flex justify-center items-center">
+          <button
+            className="
+      w-100 h-11 rounded-md text-sm font-semibold
+      border bg-[var(--aircon-button-bg)] text-[var(--aircon-heading)] border-[var(--aircon-outline)]
+      transition-all duration-300
+      hover:bg-[var(--aircon-grad-bottom)] hover:shadow-[0_6px_18px_rgba(47,125,51,0.35)]
+      hover:ring-1 hover:ring-[var(--aircon-primary)] hover:ring-offset-1
+      focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--aircon-primary)]
+      focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--aircon-section-bg)]
+    "
+          >
+            Request Special Order
+          </button>
+        </div>
+
       </div>
     </section>
   );

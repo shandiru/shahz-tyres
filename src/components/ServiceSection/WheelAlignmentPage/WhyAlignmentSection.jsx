@@ -1,66 +1,69 @@
-import React from 'react';
-import { FaCheckCircle } from 'react-icons/fa';
+import React from "react";
 
-const WhyWheelAlignment = () => {
+function CheckItem({ children }) {
   return (
-    <section className="py-16 bg-[var(--aircon-section-bg)] transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          
-          {/* Left Column */}
-          <div>
-            <h2 className="text-4xl font-bold mb-6 leading-snug text-[var(--aircon-heading)]">
-              Why Choose Professional <br /> Wheel Alignment?
-            </h2>
-            <p className="text-lg mb-8 text-[var(--aircon-muted)]">
-              Proper wheel alignment is essential for vehicle safety, performance, and cost savings.
-              Our advanced equipment and experienced technicians ensure your wheels are perfectly
-              aligned for optimal driving.
+    <li className="flex items-start gap-3">
+      <span
+        className="flex-none mt-1 w-7 h-7 rounded-full ring-1 ring-sky-500/60 flex items-center justify-center"
+        aria-hidden="true"
+      >
+        <svg
+          width="14"
+          height="14"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="text-sky-400"
+        >
+          <path
+            d="M20 6L9 17l-5-5"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </span>
+      <span className="text-slate-200 text-sm leading-6">{children}</span>
+    </li>
+  );
+}
+
+export default function TyreBalancing() {
+  return (
+    <section className="min-h-screen bg-slate-900 py-16">
+      <div className="max-w-7xl mx-auto px-6">
+        <h1 className="text-center text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-10">
+          Tyre Balancing
+        </h1>
+
+        <div className="grid gap-6 md:grid-cols-2 items-start">
+          {/* Left Card */}
+          <article className="rounded-lg p-8 bg-slate-800/60 backdrop-blur-sm ring-1 ring-slate-700 shadow-lg">
+            <p className="text-sm text-slate-300 leading-7 max-w-prose mb-6">
+              Imbalanced tyres can cause steering vibrations, uneven wear, and reduce overall ride comfort. Our
+              computerised tyre balancing ensures smooth rotation and improved driving dynamics.
             </p>
 
-            {/* Bullet Points */}
-            <div className="grid sm:grid-cols-2 gap-4">
-              {[
-                'Improved fuel efficiency',
-                'Extended tyre life',
-                'Better vehicle handling',
-                'Reduced tyre wear',
-                'Enhanced safety',
-                'Smoother driving experience',
-              ].map((text, i) => (
-                <div key={i} className="flex items-center gap-2">
-                  <FaCheckCircle className="w-5 h-5 text-[var(--aircon-check-icon)]" />
-                  <span className="text-[var(--aircon-heading)]">{text}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Right Column */}
-          <div className="rounded-xl p-8 shadow-sm border bg-[var(--aircon-card-bg)] border-[var(--aircon-card-border)]">
-            <h3 className="text-2xl font-bold mb-4 text-[var(--aircon-heading)]">
-              Signs You Need Alignment
-            </h3>
-            <ul className="space-y-4 text-[var(--aircon-muted)]">
-              {[
-                'Vehicle pulls to one side while driving',
-                'Steering wheel is off-center when driving straight',
-                'Uneven or rapid tyre wear patterns',
-                'Vibration in steering wheel or seat',
-                'Squealing tyres during normal driving',
-              ].map((sign, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <div className="w-2 h-2 mt-2 rounded-full flex-shrink-0 bg-[var(--aircon-check-icon)]" />
-                  <span>{sign}</span>
-                </li>
-              ))}
+            <ul className="space-y-4">
+              <CheckItem>Precision digital balancing machines</CheckItem>
+              <CheckItem>Static and dynamic balancing methods</CheckItem>
+              <CheckItem>Weights adjusted for optimal performance</CheckItem>
             </ul>
-          </div>
+          </article>
 
+          {/* Right Card */}
+          <aside className="rounded-lg p-8 bg-slate-800/60 backdrop-blur-sm ring-1 ring-slate-700 shadow-lg">
+            <h3 className="text-lg font-semibold text-slate-100 mb-4">Signs You Need Balancing</h3>
+
+            <ul className="space-y-4">
+              <CheckItem>Steering wheel vibration at certain speeds</CheckItem>
+              <CheckItem>Uneven tread wear patterns</CheckItem>
+              <CheckItem>Increased fuel consumption</CheckItem>
+            </ul>
+          </aside>
         </div>
       </div>
     </section>
   );
-};
-
-export default WhyWheelAlignment;
+}

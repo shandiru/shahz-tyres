@@ -19,11 +19,11 @@ export default function EmergencyCTA() {
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-          Book Your Wheel Alignment Service Today
+          Need New Tyres?
         </h2>
 
         <p className="text-xl mb-8 opacity-90">
-          Professional service from qualified technicians using the latest alignment technology
+         Get expert advice and competitive prices on premium tyres. Quick, efficient service guaranteed.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -43,7 +43,7 @@ export default function EmergencyCTA() {
               }}
             >
               <FaPhone className="h-5 w-5" />
-              Call +44 1623 623759
+              WhatsApp Quote
             </button>
           </a>
 
@@ -69,7 +69,7 @@ export default function EmergencyCTA() {
               e.currentTarget.style.boxShadow = "none";
             }}
           >
-            Request Quote
+            Get Free Quote
           </button>
         </div>
       </div>
