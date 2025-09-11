@@ -27,7 +27,7 @@ export default function Navbar() {
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center space-x-8 text-white">
-          <a href="#" className="hover:text-blue-400 transition">
+          <a href="/" className="hover:text-blue-400 transition">
             Home
           </a>
 

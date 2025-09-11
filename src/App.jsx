@@ -5,7 +5,7 @@ import Home from "./Page/Home.jsx";
 import Contact from "./Page/Contact.jsx";
 import Homewel from "./Page/HomeweldingPage.jsx";
 import About from "./Page/AboutPage.jsx";
-
+import Carwel from "./Page/CarweldingPage.jsx";
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -16,7 +16,8 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
            <Route path="/about" element={<About />} />
             <Route path="/home-welding" element={<Homewel />} />
-         
+             <Route path="/car-welding" element={<Carwel />} />
+            
         
 
         
