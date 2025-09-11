@@ -14,15 +14,11 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
-           <Route path="/about" element={<About />} />
-            <Route path="/home-welding" element={<Homewel />} />
-             <Route path="/car-welding" element={<Carwel />} />
-            
-        
-
-        
+          <Route path="/about" element={<About />} />
+          <Route path="/home-welding" element={<Homewel />} />
+          <Route path="/car-welding" element={<Carwel />} />
         </Routes>
-       
+
       </main>
     </div>
   );
