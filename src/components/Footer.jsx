@@ -1,6 +1,7 @@
 // File: SiteFooter.jsx
 import React from "react";
 import { FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 // ✅ Stoneley's Garage Services Palette
 const palette = {
@@ -18,11 +19,11 @@ export default function SiteFooter() {
   return (
     <footer style={{ backgroundColor: palette.black, color: palette.white }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-        <div className="grid md:grid-cols-3 gap-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
             <h3 className="text-xl font-bold tracking-wide text-white">
-            Shahz Tyres
+              Shahz Tyres
             </h3>
             {/* <p className="text-sm mt-3" style={{ color: palette.muted }}>
               Family-run garage established 1973. Professional automotive
@@ -52,7 +53,7 @@ export default function SiteFooter() {
                 style={{ color: palette.muted }}
               >
                 <FaMapMarkerAlt className="h-4 w-4" style={{ color: palette.softGreen }} />
-                
+
               </a>
             </div>
           </div>
@@ -62,7 +63,7 @@ export default function SiteFooter() {
             <h4 className="text-lg font-semibold text-white mb-3">
               Our Services
             </h4>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2">
               {[
                 ["Tyres", "/tyres"],
                 ["Car Welding", "/car-welding"],
@@ -71,13 +72,25 @@ export default function SiteFooter() {
                 <li key={i}>
                   <a
                     href={href}
-                    className="block transition hover:text-[#27AE60]"
-                    style={{ color: palette.dim }}
+                    className="block transition hover:text-blue-500"
                   >
                     {label}
                   </a>
                 </li>
               ))}
+            </ul>
+          </div>
+          <div>
+            <h4 className="text-lg font-semibold text-white mb-3">
+              Company
+            </h4>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/privacy-policy" className="hover:text-blue-500">Privacy Policy</Link> {/* Updated link */}
+              </li>
+              <li>
+                <Link to="/terms-conditions" className="hover:text-blue-500">Terms & Conditions</Link> {/* Updated link */}
+              </li>
             </ul>
           </div>
         </div>
@@ -90,6 +103,21 @@ export default function SiteFooter() {
           <p className="text-sm" style={{ color: palette.dim }}>
             © {new Date().getFullYear()} Shahz Tyres Services. All rights
             reserved.
+          </p>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="mt-2 text-center font-semibold">
+          <p>
+            Powered by{" "}
+            <a
+              href="https://www.ansely.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 hover:underline"
+            >
+              Ansely
+            </a>
           </p>
         </div>
       </div>
