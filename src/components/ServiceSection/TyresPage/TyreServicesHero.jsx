@@ -27,10 +27,15 @@ export default function TyreServicesHero() {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg text-lg shadow-md transition-colors">
+            {/* Get Tyre Quote Button */}
+            <a
+              href="/contact" // 👈 change this to your target link or section id (e.g. "#quote-form")
+              className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg text-lg shadow-md transition-colors text-center"
+            >
               Get Tyre Quote
-            </button>
+            </a>
 
+            {/* WhatsApp Button */}
             <a
               href="https://wa.me/447123456789?text=Hi,%20I%20need%20tyre%20services%20at%20my%20location"
               target="_blank"

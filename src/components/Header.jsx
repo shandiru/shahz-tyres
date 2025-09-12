@@ -55,7 +55,7 @@ export default function Navbar() {
           </div>
 
           <a href="/About" className="hover:text-blue-400 transition">
-            About
+            About us
           </a>
 
           <a href="/contact" className="hover:text-blue-400 transition">
@@ -107,7 +107,7 @@ export default function Navbar() {
             </details>
 
             <a href="/about" className="hover:text-blue-400 transition">
-              About
+              About us
             </a>
 
             <a href="/contact" className="hover:text-blue-400 transition">

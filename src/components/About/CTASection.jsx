@@ -15,15 +15,23 @@ export default function CTASection() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="flex items-center gap-2 justify-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg rounded-md transition-colors duration-300">
+          {/* Book Service Today */}
+          <a
+            href="/contact" // 👈 change to your booking page or section (e.g. "#booking-form")
+            className="flex items-center gap-2 justify-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg rounded-md transition-colors duration-300"
+          >
             <FaCalendarCheck className="w-5 h-5" />
             Book Service Today
-          </button>
+          </a>
 
-          <button className="flex items-center gap-2 justify-center border border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-8 py-4 text-lg rounded-md transition-colors duration-300 bg-transparent">
+          {/* Contact Us */}
+          <a
+            href="tel:+44162365615" // 👈 or use "/contact" page link
+            className="flex items-center gap-2 justify-center border border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-8 py-4 text-lg rounded-md transition-colors duration-300 bg-transparent"
+          >
             <FaPhoneAlt className="w-5 h-5" />
             Contact Us
-          </button>
+          </a>
         </div>
       </div>
     </section>

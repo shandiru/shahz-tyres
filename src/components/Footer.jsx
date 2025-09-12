@@ -38,13 +38,14 @@ export default function SiteFooter() {
             </h4>
             <div className="space-y-3">
               <a
-                href="tel:+441623623759"
+                href="tel:+44162365615"
                 className="flex items-center gap-2 text-sm transition hover:text-[#00FF40]"
                 style={{ color: palette.muted }}
               >
                 <FaPhone className="h-4 w-4" style={{ color: palette.neonGreen }} />
-                +44 162365615
+                +44 1623 65615
               </a>
+
               <a
                 href="https://www.google.com/maps/place/Stoneley's+Garage+Services"
                 target="_blank"
@@ -53,7 +54,7 @@ export default function SiteFooter() {
                 style={{ color: palette.muted }}
               >
                 <FaMapMarkerAlt className="h-4 w-4" style={{ color: palette.softGreen }} />
-
+                123 Main Street, Mansfield NG18 1AA, UK
               </a>
             </div>
           </div>
@@ -80,16 +81,22 @@ export default function SiteFooter() {
               ))}
             </ul>
           </div>
+
+          {/* Company Links */}
           <div>
             <h4 className="text-lg font-semibold text-white mb-3">
               Company
             </h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/privacy-policy" className="hover:text-blue-500">Privacy Policy</Link> {/* Updated link */}
+                <Link to="/privacy-policy" className="hover:text-blue-500">
+                  Privacy Policy
+                </Link>
               </li>
               <li>
-                <Link to="/terms-conditions" className="hover:text-blue-500">Terms & Conditions</Link> {/* Updated link */}
+                <Link to="/terms-conditions" className="hover:text-blue-500">
+                  Terms & Conditions
+                </Link>
               </li>
             </ul>
           </div>
@@ -101,8 +108,7 @@ export default function SiteFooter() {
         {/* Bottom note */}
         <div className="pt-6 text-center">
           <p className="text-sm" style={{ color: palette.dim }}>
-            © {new Date().getFullYear()} Shahz Tyres Services. All rights
-            reserved.
+            © {new Date().getFullYear()} Shahz Tyres Services. All rights reserved.
           </p>
         </div>
 
