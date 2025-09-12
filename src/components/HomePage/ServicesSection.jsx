@@ -6,19 +6,19 @@ export default function ServicesSection() {
       title: "Tyres",
       description:
         "Top-quality tyre sales, fitting, and repairs for all vehicle types",
-      href: "/services/tyres",
+      href: "/tyres",
     },
     {
       title: "Car Welding",
       description:
         "Expert car welding services for structural and cosmetic repairs",
-      href: "/services/car-welding",
+      href: "/car-welding",
     },
     {
       title: "Home Welding",
       description:
         "On-site welding services at your convenience — we come to you!",
-      href: "/services/home-welding",
+      href: "/home-welding",
     },
   ];
 

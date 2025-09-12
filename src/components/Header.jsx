@@ -85,7 +85,7 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden bg-[#0d1525] border-t border-slate-800">
           <div className="flex flex-col px-6 py-4 space-y-4 text-white">
-            <a href="#" className="hover:text-blue-400 transition">
+            <a href="/" className="hover:text-blue-400 transition">
               Home
             </a>
 
@@ -106,11 +106,11 @@ export default function Navbar() {
               </div>
             </details>
 
-            <a href="#about" className="hover:text-blue-400 transition">
+            <a href="/about" className="hover:text-blue-400 transition">
               About
             </a>
 
-            <a href="#contact" className="hover:text-blue-400 transition">
+            <a href="/contact" className="hover:text-blue-400 transition">
               Contact
             </a>
 
