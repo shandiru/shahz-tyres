@@ -2,20 +2,30 @@ import React from "react";
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 export default function ServiceAreas() {
-  const areas = [
-    {
-      title: "Derby City",
-      desc: "Full coverage within Derby city limits",
-    },
-    {
-      title: "Surrounding Areas",
-      desc: "Within 15 miles of Derby center",
-    },
-    {
-      title: "Extended Coverage",
-      desc: "Special arrangements for further distances",
-    },
-  ];
+ const areas = [
+  {
+    title: "Service Areas",
+    desc: "We provide mobile welding services throughout Leicester and surrounding areas.",
+  },
+  {
+    title: "Leicester City",
+    desc: "Full coverage within Leicester city limits.",
+  },
+  {
+    title: "Surrounding Areas",
+    desc: "We cover locations within 15 miles of Leicester city centre, including: Oadby, Wigston, Blaby, Enderby, Narborough, Braunstone, Thurmaston, Syston.",
+  },
+  {
+    title: "Nearby Towns",
+    desc: "We also serve wider Leicestershire areas such as: Loughborough, Hinckley, Market Harborough, Melton Mowbray, Coalville.",
+  },
+  {
+    title: "Extended Coverage",
+    desc: "Special arrangements available for jobs further afield across the Midlands.",
+  },
+];
+
+
 
   return (
     <section className="py-20 bg-[#0d1525]">
