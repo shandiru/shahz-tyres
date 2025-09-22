@@ -1,5 +1,7 @@
 import React from "react";
-import { FaCar, FaPhone } from "react-icons/fa";
+import { FaCar } from "react-icons/fa";
+import { FiPhone } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 export default function TyreServicesHero() {
   return (
@@ -28,12 +30,12 @@ export default function TyreServicesHero() {
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             {/* Get Tyre Quote Button */}
-            <a
-              href="/contact" // 👈 change this to your target link or section id (e.g. "#quote-form")
+            <Link
+              to="/contact" // 👈 change this to your target link or section id (e.g. "#quote-form")
               className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg text-lg shadow-md transition-colors text-center"
             >
               Get Tyre Quote
-            </a>
+            </Link>
 
             {/* WhatsApp Button */}
             <a
@@ -42,7 +44,7 @@ export default function TyreServicesHero() {
               rel="noopener noreferrer"
               className="bg-green-600 hover:bg-green-700 text-white font-medium px-6 py-3 rounded-lg text-lg flex items-center justify-center shadow-md transition-colors"
             >
-              <FaPhone className="w-4 h-4 mr-2" />
+              <FiPhone className="w-4 h-4 mr-2" />
               WhatsApp Us
             </a>
           </div>

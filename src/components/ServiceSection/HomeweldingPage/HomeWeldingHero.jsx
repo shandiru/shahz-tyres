@@ -1,5 +1,7 @@
 import React from "react";
-import { FaHome, FaPhone } from "react-icons/fa";
+import { FaHome } from "react-icons/fa";
+import { FiPhone } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 export default function HomeWeldingHero() {
   return (
@@ -27,9 +29,11 @@ export default function HomeWeldingHero() {
 
           {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg text-lg shadow-md transition-colors">
+            <Link
+              to="/contact"
+              className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg text-lg shadow-md transition-colors">
               Book Mobile Service
-            </button>
+            </Link>
 
             <a
               href="https://wa.me/447123456789?text=Hi%20ATB%20Motor%20Engineers,%20I%20need%20mobile%20welding%20services"
@@ -37,7 +41,7 @@ export default function HomeWeldingHero() {
               rel="noopener noreferrer"
               className="bg-green-600 hover:bg-green-700 text-white font-medium px-6 py-3 rounded-lg text-lg flex items-center justify-center shadow-md transition-colors"
             >
-              <FaPhone className="w-4 h-4 mr-2" />
+              <FiPhone className="w-4 h-4 mr-2" />
               WhatsApp Us
             </a>
           </div>

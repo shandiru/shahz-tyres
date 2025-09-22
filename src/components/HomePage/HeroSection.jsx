@@ -1,6 +1,7 @@
 import React from "react";
 import { FaCar, FaShieldAlt, FaClock, FaWrench } from "react-icons/fa";
 import { FiChevronDown } from "react-icons/fi";
+import { GiTyre } from "react-icons/gi";
 
 export default function HeroSection() {
   return (
@@ -9,45 +10,42 @@ export default function HeroSection() {
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/90 to-transparent z-10" />
 
-        <div className="relative z-20 w-full">
+        <div className="relative z-20 w-full mt-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="space-y-8">
               <div className="inline-flex items-center border border-blue-500 text-blue-400 bg-blue-500/10 px-3 py-1 rounded-full text-sm">
-                <FaCar className="w-4 h-4 mr-2" />
-                Derby's Premier Auto Experts
+                <GiTyre className="w-4 h-4 mr-2" />
+                Shahz Tyres
               </div>
 
               <div className="space-y-4">
-                <h1 className="text-5xl lg:text-6xl font-bold leading-tight text-white">
-                  Precision
-                  <br />
-                  <span className="text-blue-400">Motor Engineering</span>
+                <h1 className="text-5xl font-bold leading-tight text-white">
+                  Leicester’s Trusted Tyre & Welding Specialists
+                  Shahz Tyres
                 </h1>
 
                 <p className="text-xl text-gray-300 max-w-lg">
-                  At Shahz tyres, we combine advanced technology with expert
-                  craftsmanship to deliver exceptional automotive services
-                  tailored to your needs.
+               At Shahz Tyres, we provide top-quality tyres and professional welding services. With a commitment to precision and customer care, we make sure your vehicle is safe, reliable, and road-ready.
                 </p>
               </div>
 
               <div className="grid grid-cols-2 gap-6 text-sm">
                 <div className="flex items-center space-x-2">
                   <FaShieldAlt className="w-5 h-5 text-blue-400" />
-                  <span className="text-gray-300">Quality Guaranteed</span>
+                  <span className="text-gray-300"> Wide Range of Tyres for All Vehicles</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <FaClock className="w-5 h-5 text-blue-400" />
-                  <span className="text-gray-300">Fast Turnaround</span>
+                  <span className="text-gray-300">Professional Welding Services</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <FaWrench className="w-5 h-5 text-blue-400" />
-                  <span className="text-gray-300">Expert Technicians</span>
+                  <span className="text-gray-300">Fast, Reliable Turnaround</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <FaCar className="w-5 h-5 text-blue-400" />
-                  <span className="text-gray-300">Competitive Pricing</span>
+                  <span className="text-gray-300">Competitive Local Pricing</span>
                 </div>
               </div>
             </div>
@@ -56,22 +54,18 @@ export default function HeroSection() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden">
                 <img
-                  src="/pexels-photo-3807167.jpeg"
+                  //src="/pexels-photo-3807167.jpeg"
+                  src="/side.png"
                   alt="Tyres storage and technician"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-100 object-cover"
                 />
-                <div className="absolute bottom-6 right-6">
-                  <span className="bg-blue-600 text-white text-lg px-4 py-2 rounded-full">
-                    40+ Years Experience
-                  </span>
-                </div>
               </div>
             </div>
           </div>
         </div>
 
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+        <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 z-20">
           <div className="flex flex-col items-center space-y-2">
             <span className="text-blue-400 text-sm">Discover More</span>
             <FiChevronDown className="w-6 h-6 text-blue-400 animate-bounce" />

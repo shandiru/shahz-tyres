@@ -14,30 +14,26 @@ export default function Home() {
       <section id="hero">
         <HeroSection />
       </section>
-
       {/* Services */}
       <section id="services">
         <ServicesSection />
       </section>
-
-      
-        <section>
+      <section>
         <  Review />
       </section>
-
-       <section>
-        < ContactSection  />
+      <section>
+        < ContactSection />
       </section>
 
 
-     
 
-      
-      
-      
-    
 
-   
+
+
+
+
+
+
     </div>
   );
 }

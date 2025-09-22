@@ -111,9 +111,8 @@ const PrivacyPolicy = () => {
                     </p>
                     <div className="text-white">
                         <p><strong>Shahz Tyres</strong></p>
-                        <p>Email: <a href="mailto:" className="text-blue-500 hover:underline"></a></p>
-                        <p>Phone: 01530 648 708</p>
-                        <p>Address: </p>
+                        <p>Phone: +44 7462 163163</p>
+                        <p>Address: 8 Kent St, Leicester LE5 3BD, United Kingdom</p>
                     </div>
                     <p className="mt-2 text-white">
                         If you are not satisfied with our response, you have the right to lodge a complaint with the{' '}

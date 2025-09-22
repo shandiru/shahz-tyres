@@ -1,6 +1,7 @@
 // File: SiteFooter.jsx
 import React from "react";
 import { FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import { FiPhone } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 // ✅ Stoneley's Garage Services Palette
@@ -25,6 +26,11 @@ export default function SiteFooter() {
             <h3 className="text-xl font-bold tracking-wide text-white">
               Shahz Tyres
             </h3>
+            <img 
+              src="/logo.png"
+              alt="Shahz Tyres"
+            className="w-30 h-20 md:w-36 md:h-24 rounded-full object-cover"
+            />
             {/* <p className="text-sm mt-3" style={{ color: palette.muted }}>
               Family-run garage established 1973. Professional automotive
               services for cars, commercial vehicles, and motorhomes.
@@ -38,12 +44,12 @@ export default function SiteFooter() {
             </h4>
             <div className="space-y-3">
               <a
-                href="tel:+44162365615"
+                href="tel: +44 7462 163163"
                 className="flex items-center gap-2 text-sm transition hover:text-[#00FF40]"
                 style={{ color: palette.muted }}
               >
-                <FaPhone className="h-4 w-4" style={{ color: palette.neonGreen }} />
-                +44 1623 65615
+                <FiPhone className="h-4 w-4" style={{ color: palette.neonGreen }} />
+                +44 7462 163163
               </a>
 
               <a
@@ -54,7 +60,7 @@ export default function SiteFooter() {
                 style={{ color: palette.muted }}
               >
                 <FaMapMarkerAlt className="h-4 w-4" style={{ color: palette.softGreen }} />
-                123 Main Street, Mansfield NG18 1AA, UK
+                8 Kent St, Leicester LE5 3BD, UK
               </a>
             </div>
           </div>
@@ -85,7 +91,7 @@ export default function SiteFooter() {
           {/* Company Links */}
           <div>
             <h4 className="text-lg font-semibold text-white mb-3">
-              Company
+              Company Policy
             </h4>
             <ul className="space-y-2">
               <li>

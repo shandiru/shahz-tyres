@@ -2,6 +2,35 @@ import React from "react";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaWhatsapp } from "react-icons/fa";
 
 export default function ContactSection() {
+  
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const data = new FormData(e.target);
+    const first = data.get("firstName");
+    const last = data.get("lastName");
+    const email = data.get("email");
+    const phone = data.get("phone");
+    const service = data.get("service");
+    const msg = data.get("message");
+
+    // Corrected phone number validation regex
+    const phoneRegex = /^(?:\+44|0)[1-9]\d{8,9}$/;
+
+    // Check if the phone number matches the regex pattern
+    if (!phoneRegex.test(phone)) {
+      alert("Please enter a valid phone number in the format (+44) or (0) followed by 9 digits.");
+      return; // Stop the form submission if phone number is invalid
+    }
+
+    const waMsg = `Hi Shahz tyres,%0A%0AName: ${first} ${last}%0AEmail: ${email}%0APhone: ${phone}%0AService Required: ${service}%0A%0AMessage: ${msg}`;
+    window.open(`https://wa.me/447462163163?text=${waMsg}`, "_blank");
+
+    // Reset the form after submission
+    e.target.reset();
+  };
+
+
   return (
     <div className="min-h-screen bg-[#0d1525] text-white">
       {/* Hero Section */}
@@ -52,23 +81,7 @@ export default function ContactSection() {
                 <div>
                   <h3 className="text-xl font-semibold mb-1">Call Us</h3>
                   <p className="text-gray-400">
-                    <a href="tel:07462163163" className="hover:text-blue-400">07462 163163</a><br />
-                    <a href="tel:07462163163" className="hover:text-blue-400">07462 163163</a>
-                  </p>
-                </div>
-              </div>
-
-              {/* Email */}
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-                  <FaEnvelope className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-semibold mb-1">Email Us</h3>
-                  <p className="text-gray-400">
-                    <a href="mailto:info@atbmotorengineers.co.uk" className="hover:text-blue-400">
-                      info@atbmotorengineers.co.uk
-                    </a>
+                    <a href="tel:+44 7462 163163" className="hover:text-blue-400">+44 7462 163163</a>
                   </p>
                 </div>
               </div>
@@ -81,8 +94,8 @@ export default function ContactSection() {
                 <div>
                   <h3 className="text-xl font-semibold mb-1">Opening Hours</h3>
                   <p className="text-gray-400 leading-relaxed">
-                    Monday - Friday: 8:00 AM - 6:00 PM<br />
-                    Saturday: 8:00 AM - 4:00 PM<br />
+                    Monday - Friday: 9:00 AM - 6:00 PM<br />
+                    Saturday: 9:00 AM - 5:00 PM<br />
                     Sunday: Closed
                   </p>
                 </div>
@@ -96,7 +109,7 @@ export default function ContactSection() {
                 For emergency breakdown assistance, call our 24/7 emergency line:
               </p>
               <p className="text-xl font-bold text-red-400">
-                <a href="tel:07999123456" className="hover:text-red-300">07999 123 456</a>
+                <a href="tel:+44 7462 163163" className="hover:text-red-300">+44 7462 163163</a>
               </p>
             </div>
           </div>
@@ -105,48 +118,36 @@ export default function ContactSection() {
           <div>
             <div className="bg-[#111b2d] rounded-lg p-8">
               <h2 className="text-3xl font-bold mb-6">Send Us a Message</h2>
-              <form
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  const data = new FormData(e.target);
-                  const first = data.get("firstName");
-                  const last = data.get("lastName");
-                  const email = data.get("email");
-                  const phone = data.get("phone");
-                  const service = data.get("service");
-                  const msg = data.get("message");
-                  const waMsg = `Hi Shahz tyres,%0A%0AName: ${first} ${last}%0AEmail: ${email}%0APhone: ${phone}%0AService Required: ${service}%0A%0AMessage: ${msg}`;
-                  window.open(`https://wa.me/447123456789?text=${waMsg}`, "_blank");
-                }}
-                className="space-y-6"
-              >
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm mb-2">First Name</label>
+                    <label className="block text-sm mb-2">First Name <span className="text-red-500">*</span></label>
                     <input name="firstName" required placeholder="Your first name"
                       className="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded text-white" />
                   </div>
                   <div>
-                    <label className="block text-sm mb-2">Last Name</label>
+                    <label className="block text-sm mb-2">Last Name <span className="text-red-500">*</span></label>
                     <input name="lastName" required placeholder="Your last name"
                       className="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded text-white" />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm mb-2">Email Address</label>
+                  <label className="block text-sm mb-2">Email Address <span className="text-red-500">*</span></label>
                   <input type="email" name="email" required placeholder="your.email@example.com"
                     className="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded text-white" />
                 </div>
 
                 <div>
-                  <label className="block text-sm mb-2">Phone Number</label>
+                  <label className="block text-sm mb-2">Phone Number <span className="text-red-500">*</span></label>
                   <input type="tel" name="phone" required placeholder="Your phone number"
+                    pattern="^(+44|0)[1-9]\d{8,9}$"
+                    title="Phone number must be in the format (+44) or (0) followed by 9 digits"
                     className="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded text-white" />
                 </div>
 
                 <div>
-                  <label className="block text-sm mb-2">Service Required</label>
+                  <label className="block text-sm mb-2">Service Required <span className="text-red-500">*</span></label>
                   <select name="service" required
                     className="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded text-white">
                     <option value="">Select a service</option>
@@ -158,7 +159,7 @@ export default function ContactSection() {
                 </div>
 
                 <div>
-                  <label className="block text-sm mb-2">Message</label>
+                  <label className="block text-sm mb-2">Message <span className="text-red-500">*</span></label>
                   <textarea name="message" rows={5} required
                     placeholder="Tell us about your requirements..."
                     className="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded text-white" />
@@ -180,26 +181,31 @@ export default function ContactSection() {
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-4xl font-bold mb-12">Find Us</h2>
           <div className="bg-[#0d1525] rounded-lg p-8">
-            <div className="w-full h-64 bg-slate-700 rounded-lg flex items-center justify-center mb-6">
-              <div>
-                <FaMapMarkerAlt className="w-12 h-12 text-blue-400 mx-auto mb-3" />
-                <p className="text-gray-400">Interactive map would be embedded here</p>
-                <p className="text-sm text-gray-500">8 Kent St, Leicester LE5 3BD</p>
-              </div>
+            <div className="w-full h-90 bg-slate-700 rounded-xl flex items-center justify-center mb-6">
+              {/* Map iframe */}
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2421.20155643871!2d-1.1248037186130142!3d52.638271465798184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48776116d109e0b7%3A0x2ea37709a9f45a2f!2s8%20Kent%20St%2C%20Leicester%20LE5%203BD%2C%20UK!5e0!3m2!1sen!2slk!4v1758515895022!5m2!1sen!2slk"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Shahz Tyres Location"
+                className="w-full h-full rounded-xl"
+              ></iframe>
             </div>
 
             <div className="grid md:grid-cols-3 gap-6">
               <div>
                 <h3 className="font-semibold mb-1">Easy Parking</h3>
-                <p className="text-gray-400 text-sm">Free customer parking available on-site</p>
+                <p className="text-gray-400 text-sm">Free customer parking available on-site at Shahz Tyres Leicester, making it simple to drop in for tyres, welding or repairs.</p>
               </div>
               <div>
                 <h3 className="font-semibold mb-1">Public Transport</h3>
-                <p className="text-gray-400 text-sm">Bus stop 2 minutes walk from our garage</p>
+                <p className="text-gray-400 text-sm">Conveniently connected – a bus stop just 2 minutes’ walk from our Leicester garage, so getting new tyres or welding work done is hassle-free.</p>
               </div>
               <div>
                 <h3 className="font-semibold mb-1">Central Location</h3>
-                <p className="text-gray-400 text-sm">Conveniently located in Derby city center</p>
+                <p className="text-gray-400 text-sm">Located close to Leicester city centre, Shahz Tyres is your local go-to for affordable tyres and professional welding services.</p>
               </div>
             </div>
           </div>
