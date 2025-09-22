@@ -29,8 +29,11 @@ export default function WeldingProcess() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
           {steps.map((step, index) => (
-            <div key={index} className="space-y-4">
-              <h3 className="text-lg font-semibold text-white">
+            <div
+              key={index}
+              className="bg-[#0F1A2C] p-6 rounded-xl shadow-lg hover:bg-[#14213D] transition duration-300"
+            >
+              <h3 className="text-lg font-semibold text-white mb-2">
                 {step.title}
               </h3>
               <p className="text-gray-300 text-sm leading-relaxed">

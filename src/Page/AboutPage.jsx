@@ -20,9 +20,9 @@ export default function About() {
       <OurValuesSection />
     </div>
 
-    <div>
+    {/* <div>
         <TeamSection />
-    </div>
+    </div> */}
     <div>
         <CTASection />
     </div>

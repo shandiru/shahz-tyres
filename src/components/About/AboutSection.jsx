@@ -19,9 +19,7 @@ export default function AboutSection() {
 
           {/* Description */}
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            For over 40 years, Shahz tyres has been Derby's trusted automotive service
-            provider. We combine decades of experience with modern technology to
-            deliver exceptional results for every customer.
+           For decades, Shahz Tyres has been Leicester’s go-to team for reliable automotive care. Known for being friendly, approachable, and always ready to help, we’ve built a reputation across Leicestershire for putting customers first.
           </p>
         </div>
       </section>
