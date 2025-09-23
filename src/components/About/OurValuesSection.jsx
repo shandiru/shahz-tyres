@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaShieldAlt, FaUsers, FaAward, FaClock } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 export default function OurValuesSection() {
   // Array of values
@@ -30,16 +32,29 @@ export default function OurValuesSection() {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in ms
+      easing: 'ease-in-out', // Easing function for the animation
+      once: true, // Whether animation should only happen once
+    });
+  }, []);
+
   return (
     <section className="py-20 bg-[#111b2d] px-6 lg:px-16">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16 text-white">
+        <h2 className="text-4xl font-bold text-center mb-16 text-white" data-aos="fade-up">
           Our Values
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           {values.map((value, index) => (
-            <div key={index} className="bg-[#172642] rounded-lg p-6 text-center shadow-xl hover:shadow-lg hover:bg-[#162236] hover:z-30 transition-all duration-300 active:bg-[#162236] active:shadow-lg hover:scale-105 active:scale-100">
+            <div
+              key={index}
+              className="bg-[#172642] rounded-lg p-6 text-center shadow-xl hover:shadow-lg hover:bg-[#162236] hover:z-30 transition-all duration-300 active:bg-[#162236] active:shadow-lg hover:scale-105 active:scale-100"
+              data-aos="fade-up"
+              data-aos-delay={index * 200} // Staggered delay for animation
+            >
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 {value.icon}
               </div>

@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaHome, FaMapMarkerAlt, FaFire, FaClock } from "react-icons/fa";
 import { GiAnvil } from "react-icons/gi";
 import { MdBuild } from "react-icons/md";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 export default function MobileWeldingServices() {
   const services = [
@@ -43,10 +45,21 @@ export default function MobileWeldingServices() {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duration of the animation in milliseconds
+      easing: "ease-in-out", // Easing function for smooth animation
+      once: true, // Animation happens only once when the element comes into view
+    });
+  }, []);
+
   return (
     <section className="py-20 bg-[#0d1525]">
       <div className="container mx-auto px-6 md:px-10 lg:px-16">
-        <h2 className="text-4xl font-bold text-center text-white mb-16">
+        <h2
+          className="text-4xl font-bold text-center text-white mb-16"
+          data-aos="fade-up"
+        >
           Mobile Welding Services
         </h2>
 
@@ -55,6 +68,8 @@ export default function MobileWeldingServices() {
             <div
               key={index}
               className="bg-[#111b2d] rounded-lg p-6 shadow-md hover:shadow-lg hover:bg-[#162236] hover:z-30 transition-all duration-300 active:bg-[#162236] active:shadow-lg hover:scale-105 active:scale-100"
+              data-aos="fade-up"
+              data-aos-delay={index * 100} // Staggered animations with delay based on index
             >
               <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
                 {service.icon}

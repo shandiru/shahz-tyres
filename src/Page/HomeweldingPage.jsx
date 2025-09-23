@@ -10,27 +10,27 @@ import CtaSection from "../components/ServiceSection/HomeweldingPage/CtaSection"
 export default function Homewel() {
   return (
     <>
-    
-    <div>
-      <HomeWeldingHero />
-    </div>
 
-    <div>
+      <div>
+        <HomeWeldingHero />
+      </div>
+
+      <div>
         <MobileWeldingServices />
-    </div>
-    
-    <div>
+      </div>
+
+      <div>
         <ServiceAreas />
-    </div>
+      </div>
 
-    <div>
+      <div>
         <HowItWorks />
-    </div>
+      </div>
 
-    <div>
+      <div>
         <CtaSection />
-    </div>
+      </div>
     </>
-    
+
   );
 }

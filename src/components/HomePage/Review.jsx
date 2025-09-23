@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS CSS
 
 export default function ReviewsSection() {
   const reviews = [
@@ -19,6 +21,15 @@ export default function ReviewsSection() {
     },
   ];
 
+  // Initialize AOS when the component mounts
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
+
   return (
     <section className="py-20 bg-[#0d1525] px-6 lg:px-16">
       <div className="max-w-7xl mx-auto">
@@ -28,8 +39,7 @@ export default function ReviewsSection() {
             What Our Customers Say
           </h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Don't just take our word for it — see what our satisfied customers
-            have to say
+            Don't just take our word for it — see what our satisfied customers have to say
           </p>
         </div>
 
@@ -39,6 +49,8 @@ export default function ReviewsSection() {
             <div
               key={index}
               className="bg-[#111b2d] rounded-lg p-6 shadow-sm hover:shadow-md hover:bg-[#162236] hover:z-30 transition-all duration-300 active:bg-[#162236] active:shadow-lg hover:scale-105 active:scale-100"
+              data-aos="fade-up" // AOS animation on scroll
+              data-aos-delay={index * 200} // Delay based on the index for staggered animation
             >
               <div className="flex mb-4">
                 {[...Array(5)].map((_, i) => (

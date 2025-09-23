@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 export default function WeldingProcess() {
   const steps = [
@@ -20,10 +22,21 @@ export default function WeldingProcess() {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duration of the animation in milliseconds
+      easing: "ease-in-out", // Easing function for smooth animation
+      once: true, // Animation happens only once when the element comes into view
+    });
+  }, []);
+
   return (
     <section className="py-20 bg-[#0d1525]">
       <div className="container mx-auto px-6 md:px-10 lg:px-16">
-        <h2 className="text-4xl font-bold text-center text-white mb-16">
+        <h2
+          className="text-4xl font-bold text-center text-white mb-16"
+          data-aos="fade-up"
+        >
           Our Welding Process
         </h2>
 
@@ -32,6 +45,8 @@ export default function WeldingProcess() {
             <div
               key={index}
               className="bg-[#0a3a86] p-6 rounded-xl shadow-lg duration-300 hover:bg-[#2357b1] hover:z-30 transition-all active:bg-[#162236] active:shadow-lg hover:scale-105 active:scale-100"
+              data-aos="fade-up"
+              data-aos-delay={index * 200} // Staggered animations with delay based on index
             >
               <h3 className="text-lg font-semibold text-white mb-2">
                 {step.title}

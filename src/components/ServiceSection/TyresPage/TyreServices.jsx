@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaCar, FaShieldAlt, FaClock } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 export default function TyreServices() {
   const services = [
@@ -23,10 +25,21 @@ export default function TyreServices() {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration
+      easing: "ease-in-out", // Easing function for the animation
+      once: true, // Whether the animation should only happen once when the element enters the viewport
+    });
+  }, []);
+
   return (
     <section className="py-20 bg-[#0d1525]">
       <div className="container mx-auto px-6 md:px-10 lg:px-16">
-        <h2 className="text-4xl font-bold text-center text-white mb-16">
+        <h2
+          className="text-4xl font-bold text-center text-white mb-16"
+          data-aos="fade-up"
+        >
           Our Tyre Services
         </h2>
 
@@ -35,6 +48,8 @@ export default function TyreServices() {
             <div
               key={index}
               className="bg-[#111b2d] rounded-lg p-6 shadow-md hover:shadow-lg hover:bg-[#162236] hover:z-30 transition-all duration-300 active:bg-[#162236] active:shadow-lg hover:scale-105 active:scale-100"
+              data-aos="fade-up"
+              data-aos-delay={index * 200} // Staggered delay for smooth animation
             >
               <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
                 {service.icon}

@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS CSS
 
 export default function ServicesSection() {
   const services = [
@@ -22,6 +24,15 @@ export default function ServicesSection() {
     },
   ];
 
+  // Initialize AOS when the component mounts
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
+
   return (
     <section className="py-20 bg-[#0d1525] px-6 lg:px-16">
       <div className="max-w-7xl mx-auto">
@@ -39,6 +50,8 @@ export default function ServicesSection() {
             <div
               key={index}
               className="bg-[#111b2d] rounded-lg p-6 hover:bg-[#162236] hover:z-30 transition-all duration-300 active:bg-[#162236] active:shadow-lg hover:scale-105 active:scale-100"
+              data-aos="fade-up" // AOS animation on scroll
+              data-aos-delay={index * 200} // Delay based on the index for staggered animation
             >
               <h3 className="text-xl font-semibold mb-3 text-blue-400">
                 {service.title}

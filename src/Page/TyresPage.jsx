@@ -10,30 +10,30 @@ import TyreCtaSection from "../components/ServiceSection/TyresPage/TyreCtaSectio
 export default function Tyres() {
   return (
     <>
-    
-    <div>
-      <TyreServicesHero />
-    </div>
 
-    <div>
+      <div>
+        <TyreServicesHero />
+      </div>
+
+      <div>
         <TyreServices />
-    </div>
-    
-    <div>
+      </div>
+
+      <div>
         <PremiumTyreBrands />
-    </div>
+      </div>
 
-    <div>
+      <div>
         <TyreBalancing />
-    </div>
+      </div>
 
-    <div>
-        <SeasonalTyreChangeovers/>
-    </div>
-    <div>
-      <TyreCtaSection />
-    </div>
+      <div>
+        <SeasonalTyreChangeovers />
+      </div>
+      <div>
+        <TyreCtaSection />
+      </div>
     </>
-    
+
   );
 }
