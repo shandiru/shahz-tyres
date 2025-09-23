@@ -1,5 +1,6 @@
 import React from "react";
 import { FiPhone } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 export default function CtaSection() {
   return (
@@ -15,9 +16,11 @@ export default function CtaSection() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="px-6 py-3 rounded-md text-white font-medium bg-blue-600 hover:bg-blue-700 transition-colors">
+          <Link
+            to="/contact"
+            className="px-6 py-3 rounded-md text-white font-medium bg-blue-600 hover:bg-blue-700 transition-colors">
             Book Mobile Service
-          </button>
+          </Link>
 
           <a
             href="https://wa.me/447123456789?text=Hi,%20I%20need%20mobile%20welding%20services%20at%20my%20location"

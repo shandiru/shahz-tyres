@@ -36,13 +36,13 @@ export default function CarWeldingHero() {
             </Link>
 
             <a
-              href="tel: +447462163163"
+              href="tell: +447462163163"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-600 hover:bg-green-700 text-white font-medium px-6 py-3 rounded-lg text-lg flex items-center justify-center shadow-md transition-colors"
+              className="bg-[#0a3a86] hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg text-lg flex items-center justify-center shadow-md transition-colors"
             >
               <FiPhone className="w-4 h-4 mr-2" />
-              WhatsApp Us
+              Call Us
             </a>
           </div>
         </div>

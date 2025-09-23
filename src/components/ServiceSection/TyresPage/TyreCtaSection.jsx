@@ -1,5 +1,6 @@
 import React from "react";
 import { FiPhone } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 export default function TyreCtaSection() {
   return (
@@ -18,12 +19,14 @@ export default function TyreCtaSection() {
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="px-6 py-3 rounded-md text-white font-medium bg-blue-600 hover:bg-blue-700 transition-colors">
+          <Link
+          to="/contact"
+          className="px-6 py-3 rounded-md text-white font-medium bg-blue-600 hover:bg-blue-700 transition-colors">
             Get Free Quote
-          </button>
+          </Link>
 
           <a
-            href="tel: +447462163163"
+            href="https://wa.me/+447462163163?text=Hi%20Shahz%20Tyres"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-md text-white font-medium bg-green-600 hover:bg-green-700 flex items-center justify-center transition-colors"

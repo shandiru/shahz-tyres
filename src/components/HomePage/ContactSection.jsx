@@ -2,7 +2,7 @@ import React from "react";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaWhatsapp } from "react-icons/fa";
 
 export default function ContactSection() {
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -67,9 +67,14 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold mb-1">Visit Our Garage</h3>
-                  <p className="text-gray-400 leading-relaxed">
-                    8 Kent St<br />Leicester<br />LE5 3BD
-                  </p>
+                  <a
+                    href="https://www.google.com/maps/place/Stoneley's+Garage+Services"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center hover:text-blue-500 gap-2 text-sm transition"
+                  >
+                    8 Kent St, Leicester LE5 3BD, UK
+                  </a>
                 </div>
               </div>
 
