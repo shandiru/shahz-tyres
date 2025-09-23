@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function CarWeldingHero() {
   return (
     <section className="relative py-24 bg-[#0d1525]">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 mt-10">
         <div className="text-center max-w-4xl mx-auto">
           {/* Top Label */}
           <div className="inline-flex items-center border border-blue-500 text-blue-400 bg-blue-500/10 px-4 py-1.5 rounded-full mb-6 text-sm">

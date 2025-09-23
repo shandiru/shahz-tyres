@@ -31,7 +31,7 @@ export default function HowItWorks() {
           {steps.map((step, i) => (
             <div
               key={i}
-              className="bg-[#111b2d] rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow"
+              className="bg-[#111b2d] rounded-lg p-6 shadow-md hover:shadow-lg hover:bg-[#162236] hover:z-30 transition-all duration-300 active:bg-[#162236] active:shadow-lg hover:scale-105 active:scale-100"
             >
               <h3 className="text-lg font-semibold text-white mb-2">{step.title}</h3>
               <p className="text-gray-300 text-sm leading-relaxed">{step.desc}</p>

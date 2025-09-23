@@ -38,7 +38,7 @@ export default function ReviewsSection() {
           {reviews.map((review, index) => (
             <div
               key={index}
-              className="bg-[#111b2d] rounded-lg p-6 shadow-sm hover:shadow-md transition"
+              className="bg-[#111b2d] rounded-lg p-6 shadow-sm hover:shadow-md hover:bg-[#162236] hover:z-30 transition-all duration-300 active:bg-[#162236] active:shadow-lg hover:scale-105 active:scale-100"
             >
               <div className="flex mb-4">
                 {[...Array(5)].map((_, i) => (

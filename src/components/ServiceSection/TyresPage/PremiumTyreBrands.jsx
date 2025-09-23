@@ -1,5 +1,6 @@
 import React from "react";
 import { FaPhone } from "react-icons/fa";
+import { FiPhone } from "react-icons/fi";
 
 export default function PremiumTyreBrands() {
   const brands = [
@@ -26,7 +27,7 @@ export default function PremiumTyreBrands() {
           {brands.map((brand, index) => (
             <div
               key={index}
-              className="bg-[#111b2d] rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow"
+              className="bg-[#111b2d] rounded-lg p-6 shadow-md hover:shadow-lg hover:bg-[#162236] hover:z-30 transition-all duration-300 active:bg-[#162236] active:shadow-lg hover:scale-105 active:scale-100"
             >
               <h3 className="text-lg font-semibold text-blue-400 mb-1">
                 {brand}
@@ -47,7 +48,7 @@ export default function PremiumTyreBrands() {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-6 py-3 rounded-md text-white font-medium bg-green-600 hover:bg-green-700 transition-colors"
         >
-          <FaPhone className="w-4 h-4" />
+          <FiPhone className="w-4 h-4" />
           Request Special Order
         </a>
       </div>

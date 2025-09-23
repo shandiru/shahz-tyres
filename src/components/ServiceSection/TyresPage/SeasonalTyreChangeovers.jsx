@@ -10,7 +10,7 @@ export default function SeasonalTyreChangeovers() {
         </h2>
 
         {/* Content Card */}
-        <div className="bg-[#111b2d] rounded-lg p-8 max-w-5xl mx-auto">
+        <div className="bg-[#111b2d] rounded-lg p-8 max-w-5xl mx-auto hover:bg-[#162236] hover:z-30 transition-all duration-300 active:bg-[#162236] active:shadow-lg hover:scale-105 active:scale-100">
           <p className="text-gray-300 mb-6">
             If you drive in areas with changing climates, seasonal tyre changeovers can
             enhance grip, safety, and performance. We offer quick swaps and storage options

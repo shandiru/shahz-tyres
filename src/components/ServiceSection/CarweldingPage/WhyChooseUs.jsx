@@ -35,11 +35,11 @@ export default function WhyChooseUs() {
           Why Choose Our Welding Services?
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {features.map((item, index) => (
             <div
               key={index}
-              className="bg-[#111b2d] rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow"
+              className="bg-[#111b2d] rounded-lg p-6 shadow-md hover:shadow-lg hover:bg-[#162236] hover:z-30 transition-all duration-300 active:bg-[#162236] active:shadow-lg hover:scale-105 active:scale-100"
             >
               <h3 className="text-lg font-semibold text-white mb-2">
                 {item.title}

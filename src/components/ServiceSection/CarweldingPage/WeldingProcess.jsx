@@ -31,7 +31,7 @@ export default function WeldingProcess() {
           {steps.map((step, index) => (
             <div
               key={index}
-              className="bg-[#0F1A2C] p-6 rounded-xl shadow-lg hover:bg-[#14213D] transition duration-300"
+              className="bg-[#0F1A2C] p-6 rounded-xl shadow-lg duration-300 hover:bg-[#162236] hover:z-30 transition-all active:bg-[#162236] active:shadow-lg hover:scale-105 active:scale-100"
             >
               <h3 className="text-lg font-semibold text-white mb-2">
                 {step.title}

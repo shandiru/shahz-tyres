@@ -52,7 +52,7 @@ export default function CarWeldingServices() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-[#111b2d] rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow"
+              className="bg-[#111b2d] rounded-lg p-6 shadow-md hover:bg-[#162236] hover:z-30 transition-all duration-300 active:bg-[#162236] active:shadow-lg hover:scale-105 active:scale-100"
             >
               <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
                 {service.icon}

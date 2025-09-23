@@ -42,7 +42,7 @@ export default function ServiceAreas() {
           {areas.map((area, i) => (
             <div
               key={i}
-              className="bg-[#111b2d] rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow"
+              className="bg-[#111b2d] rounded-lg p-6 text-center shadow-md hover:shadow-lg hover:bg-[#162236] hover:z-30 transition-all duration-300 active:bg-[#162236] active:shadow-lg hover:scale-105 active:scale-100"
             >
               <FaMapMarkerAlt className="w-8 h-8 text-blue-400 mx-auto mb-4" />
               <h3 className="text-lg font-semibold text-white mb-2">{area.title}</h3>

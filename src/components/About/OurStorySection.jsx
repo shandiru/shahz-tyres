@@ -36,7 +36,7 @@ export default function OurStorySection() {
           </div>
 
           {/* RIGHT LIST */}
-          <div className="bg-[#111b2d] rounded-lg p-8 space-y-4">
+          <div className="bg-[#111b2d] rounded-lg p-8 space-y-4 mt-20 hover:bg-[#162236] hover:z-30 transition-all duration-300 active:bg-[#162236] active:shadow-lg hover:scale-105 active:scale-100">
             <h3 className="text-2xl font-semibold text-blue-400 mb-4">
               Why People Choose Us
             </h3>

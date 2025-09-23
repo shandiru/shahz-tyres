@@ -19,7 +19,7 @@ const palette = {
 export default function SiteFooter() {
   return (
     <footer style={{ backgroundColor: palette.black, color: palette.white }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
@@ -45,8 +45,7 @@ export default function SiteFooter() {
             <div className="space-y-3">
               <a
                 href="tel: +44 7462 163163"
-                className="flex items-center gap-2 text-sm transition hover:text-[#00FF40]"
-                style={{ color: palette.muted }}
+                className="flex hover:text-blue-500 items-center gap-2 text-sm transition"
               >
                 <FiPhone className="h-4 w-4" style={{ color: palette.neonGreen }} />
                 +44 7462 163163
@@ -56,8 +55,7 @@ export default function SiteFooter() {
                 href="https://www.google.com/maps/place/Stoneley's+Garage+Services"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm transition hover:text-[#00FF40]"
-                style={{ color: palette.muted }}
+                className="flex items-center hover:text-blue-500 gap-2 text-sm transition"
               >
                 <FaMapMarkerAlt className="h-4 w-4" style={{ color: palette.softGreen }} />
                 8 Kent St, Leicester LE5 3BD, UK

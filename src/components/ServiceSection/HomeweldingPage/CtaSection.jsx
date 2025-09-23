@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPhone } from "react-icons/fa";
+import { FiPhone } from "react-icons/fi";
 
 export default function CtaSection() {
   return (
@@ -25,7 +25,7 @@ export default function CtaSection() {
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-md text-white font-medium bg-green-600 hover:bg-green-700 flex items-center justify-center transition-colors"
           >
-            <FaPhone className="w-4 h-4 mr-2" />
+            <FiPhone className="w-4 h-4 mr-2" />
             WhatsApp for Quote
           </a>
         </div>

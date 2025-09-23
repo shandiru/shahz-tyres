@@ -34,8 +34,8 @@ export default function QualitySafetyStandards() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 text-center">
           {features.map((feature, index) => (
-            <div key={index}>
-              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+            <div key={index} className="bg-[#111b2d] rounded-lg p-6 shadow-md hover:bg-[#162236] hover:z-30 transition-all duration-300 active:bg-[#162236] active:shadow-lg hover:scale-105 active:scale-100">
+              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 ">
                 {feature.icon}
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">

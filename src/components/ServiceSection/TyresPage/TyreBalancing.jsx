@@ -11,7 +11,7 @@ export default function TyreBalancing() {
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Left Card */}
-          <div className="bg-[#111b2d] rounded-lg p-8">
+          <div className="bg-[#111b2d] rounded-lg p-8 hover:bg-[#162236] hover:z-30 transition-all duration-300 active:bg-[#162236] active:shadow-lg hover:scale-105 active:scale-100">
             <p className="text-gray-300 mb-6">
               Imbalanced tyres can cause steering vibrations, uneven wear, and reduce
               overall ride comfort. Our computerised tyre balancing ensures smooth
@@ -35,7 +35,7 @@ export default function TyreBalancing() {
           </div>
 
           {/* Right Card */}
-          <div className="bg-[#111b2d] rounded-lg p-8">
+          <div className="bg-[#111b2d] rounded-lg p-8 hover:bg-[#162236] hover:z-30 transition-all duration-300 active:bg-[#162236] active:shadow-lg hover:scale-105 active:scale-100">
             <h3 className="text-xl font-semibold text-white mb-4">
               Signs You Need Balancing
             </h3>
