@@ -26,7 +26,7 @@ export default function CTASection() {
 
           {/* Contact Us */}
           <a
-            href="tel:+44 7462 163163" // 👈 or use "/contact" page link
+            href="tel: +447462163163" // 👈 or use "/contact" page link
             className="flex items-center gap-2 justify-center border border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-8 py-4 text-lg rounded-md transition-colors duration-300 bg-transparent"
           >
             <FaPhoneAlt className="w-5 h-5" />

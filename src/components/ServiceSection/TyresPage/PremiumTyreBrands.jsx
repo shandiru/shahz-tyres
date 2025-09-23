@@ -43,7 +43,7 @@ export default function PremiumTyreBrands() {
         </p>
 
         <a
-          href="https://wa.me/447123456789?text=Hi,%20I%20want%20to%20request%20a%20special%20tyre%20order"
+          href="tel: +447462163163"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-6 py-3 rounded-md text-white font-medium bg-green-600 hover:bg-green-700 transition-colors"

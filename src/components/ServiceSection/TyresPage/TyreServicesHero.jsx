@@ -39,7 +39,7 @@ export default function TyreServicesHero() {
 
             {/* WhatsApp Button */}
             <a
-              href="https://wa.me/447123456789?text=Hi,%20I%20need%20tyre%20services%20at%20my%20location"
+              href="tel: +447462163163"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-600 hover:bg-green-700 text-white font-medium px-6 py-3 rounded-lg text-lg flex items-center justify-center shadow-md transition-colors"

@@ -44,7 +44,7 @@ export default function SiteFooter() {
             </h4>
             <div className="space-y-3">
               <a
-                href="tel: +44 7462 163163"
+                href="tel: +447462163163"
                 className="flex hover:text-blue-500 items-center gap-2 text-sm transition"
               >
                 <FiPhone className="h-4 w-4" style={{ color: palette.neonGreen }} />
