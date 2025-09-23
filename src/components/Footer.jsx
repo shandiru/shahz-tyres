@@ -31,10 +31,6 @@ export default function SiteFooter() {
               alt="Shahz Tyres"
             className="w-30 h-20 md:w-36 md:h-24 rounded-full object-cover"
             />
-            {/* <p className="text-sm mt-3" style={{ color: palette.muted }}>
-              Family-run garage established 1973. Professional automotive
-              services for cars, commercial vehicles, and motorhomes.
-            </p> */}
           </div>
 
           {/* Contact Info */}
