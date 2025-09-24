@@ -49,7 +49,7 @@ export default function ContactSection() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0d1525] text-white">
+    <div className="min-h-screen bg-[#0d1525] text-white mt-15">
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-b from-[#111b2d] to-[#0d1525] px-6 lg:px-16" data-aos="fade-up">
         <div className="max-w-4xl mx-auto text-center">
