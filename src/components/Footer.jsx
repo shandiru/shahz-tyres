@@ -20,7 +20,7 @@ export default function SiteFooter() {
   return (
     <footer style={{ backgroundColor: palette.black, color: palette.white }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid p-3 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
             <h3 className="text-xl font-bold tracking-wide text-white">

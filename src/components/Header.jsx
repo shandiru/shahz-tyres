@@ -26,7 +26,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex items-center space-x-8 text-white">
+        <div className="hidden lg:flex items-center space-x-8 text-white">
           <a href="/" className="hover:text-blue-400 transition text-sm md:text-base">
             Home
           </a>
@@ -75,7 +75,7 @@ export default function Navbar() {
         {/* Mobile Hamburger */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden text-white text-2xl"
+          className="lg:hidden text-white text-2xl"
         >
           {isMenuOpen ? <FaTimes /> : <FaBars />}
         </button>
@@ -83,15 +83,15 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-[#0d1525] border-t border-slate-800">
+        <div className="lg:hidden p-3 bg-[#0d1525] border-t border-slate-800">
           <div className="flex flex-col px-6 py-4 space-y-4 text-white">
             <a href="/" className="hover:text-blue-400 transition text-sm">
               Home
             </a>
 
             <details className="group">
-              <summary className="flex items-center justify-between cursor-pointer hover:text-blue-400 text-sm">
-                Services <FiChevronDown className="ml-1" />
+              <summary className="flex items-center gap-1 cursor-pointer hover:text-blue-400 text-sm">
+                Services <FiChevronDown className="mt-[1px]" />
               </summary>
               <div className="flex flex-col pl-4 mt-2 space-y-2">
                 {services.map((s) => (
