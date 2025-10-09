@@ -14,7 +14,7 @@ export default function CtaSection() {
   }, []);
 
   return (
-    <section className="py-20 bg-[#0d1525]">
+    <section className="py-10 bg-[#0d1525]">
       <div className="container mx-auto px-6 text-center">
         {/* Heading */}
         <h2

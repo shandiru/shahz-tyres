@@ -36,7 +36,7 @@ export default function QualitySafetyStandards() {
   }, []);
 
   return (
-    <section className="py-20 bg-[#0d1525]">
+    <section className="py-8 bg-[#0d1525]">
       <div className="container mx-auto px-6 md:px-10 lg:px-16">
         <h2
           className="text-4xl font-bold text-center text-white mb-16"

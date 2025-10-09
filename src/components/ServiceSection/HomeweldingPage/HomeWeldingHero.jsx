@@ -15,7 +15,7 @@ export default function HomeWeldingHero() {
   }, []);
 
   return (
-    <section className="relative py-24 bg-[#0d1525]">
+    <section className="relative py-20 bg-[#0d1525]">
       <div className="container mx-auto px-6 mt-10">
         <div className="text-center max-w-4xl mx-auto">
           {/* Top Label */}

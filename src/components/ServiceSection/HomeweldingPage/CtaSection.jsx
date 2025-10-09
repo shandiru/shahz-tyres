@@ -14,8 +14,8 @@ export default function CtaSection() {
   }, []);
 
   return (
-    <section className="py-20 bg-[#0d1525]" data-aos="fade-up">
-      <div className="container mx-auto px-6 text-center">
+    <section className="py-8 bg-[#0d1525]">
+      <div className="container mx-auto px-6 text-center"  data-aos="fade-up">
         <h2
           className="text-4xl font-bold text-white mb-6"
           data-aos="fade-up"

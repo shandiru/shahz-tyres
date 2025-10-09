@@ -12,7 +12,7 @@ export default function TyreBalancing() {
   }, []);
 
   return (
-    <section className="py-20 bg-[#0d1525]">
+    <section className="py-5 bg-[#0d1525]">
       <div className="container mx-auto px-6 md:px-10 lg:px-16">
         {/* Heading */}
         <h2
