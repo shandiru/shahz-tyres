@@ -17,7 +17,7 @@ export default function HeroSection() {
 
   return (
     <div className="bg-slate-900">
-    <section className="relative mt-10 min-h-screen flex items-center px-5 sm:px-6 lg:px-16 pt-16 sm:pt-12 md:pt-8 lg:pt-0 py-20">
+    <section className="relative mt-10 flex items-center px-5 sm:px-6 lg:px-16 pt-16 sm:pt-12 md:pt-8 lg:pt-0 py-20">
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/90 to-transparent z-10" />
 
@@ -31,7 +31,7 @@ export default function HeroSection() {
               </div>
 
               <div className="space-y-4">
-                <h1 className="text-5xl font-bold leading-tight text-white" data-aos="fade-up">
+                <h1 className="text-3xl font-bold leading-tight text-white" data-aos="fade-up">
                   Leicester’s Trusted Tyre & Welding Specialists
                   Shahz Tyres
                 </h1>
