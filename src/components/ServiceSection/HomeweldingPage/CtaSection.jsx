@@ -46,7 +46,7 @@ export default function CtaSection() {
           </Link>
 
           <a
-            href="https://wa.me/447123456789?text=Hi,%20I%20need%20mobile%20welding%20services%20at%20my%20location"
+           href="https://wa.me/+447462163163"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-md text-white font-medium bg-green-600 hover:bg-green-700 flex items-center justify-center transition-colors"
