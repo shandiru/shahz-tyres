@@ -11,6 +11,7 @@ import SiteFooter from "./components/Footer.jsx";
 import TermsConditions from "./components/Term.jsx";
 import PrivacyPolicy from "./components/PrivacyPolicy.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
+import GDPRConsent from "./components/GDPRButton.jsx";
 export default function App() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
         <SiteFooter />
+        <GDPRConsent />
       </main>
     </div>
   );

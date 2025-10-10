@@ -85,7 +85,7 @@ export default function ContactSection() {
                 <div>
                   <h3 className="text-xl font-semibold mb-1">Visit Our Garage</h3>
                   <a
-                    href="https://www.google.com/maps/place/Stoneley's+Garage+Services"
+                    href="https://maps.app.goo.gl/EABgPeZiNTGn9vq26"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center hover:text-blue-500 gap-2 text-sm transition"
@@ -211,8 +211,7 @@ export default function ContactSection() {
             <div className="w-full h-90 bg-slate-700 rounded-xl flex items-center justify-center mb-6" data-aos="zoom-in">
               {/* Map iframe */}
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2421.20155643871!2d-1.1248037186130142!3d52.638271465798184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48776116d109e0b7%3A0x2ea37709a9f45a2f!2s8%20Kent%20St%2C%20Leicester%20LE5%203BD%2C%20UK!5e0!3m2!1sen!2slk!4v1758515895022!5m2!1sen!2slk"
-                style={{ border: 0 }}
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d151.32508713430255!2d-1.1203427167237288!3d52.63827439798777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487761bba958b969%3A0xda3d132e8624eb3a!2sShahz%20Tyres%20%26%20wheel%20welding%20repair!5e0!3m2!1sen!2slk!4v1760074485845!5m2!1sen!2slk"
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

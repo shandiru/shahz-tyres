@@ -48,7 +48,7 @@ export default function SiteFooter() {
               </a>
 
               <a
-                href="https://www.google.com/maps/place/Stoneley's+Garage+Services"
+                href="https://maps.app.goo.gl/EABgPeZiNTGn9vq26"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center hover:text-blue-500 gap-2 text-sm transition"
