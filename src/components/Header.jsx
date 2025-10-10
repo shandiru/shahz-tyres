@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { FiChevronDown, FiPhone } from "react-icons/fi";
+import { HashLink } from "react-router-hash-link";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,9 +28,9 @@ export default function Navbar() {
 
         {/* Desktop Links */}
         <div className="hidden lg:flex items-center space-x-8 text-white">
-          <a href="/" className="hover:text-blue-400 transition text-sm md:text-base">
+          <HashLink to="/" className="hover:text-blue-400 transition text-sm md:text-base">
             Home
-          </a>
+          </HashLink>
 
           <div
             className="relative"
@@ -42,25 +43,25 @@ export default function Navbar() {
             {servicesOpen && (
               <div className="absolute top-6 left-0 bg-slate-800 rounded shadow-lg py-2 w-40">
                 {services.map((s) => (
-                  <a
+                  <HashLink
                     key={s.name}
-                    href={s.href}
+                    to={s.href}
                     className="block px-4 py-2 text-sm text-white hover:bg-slate-700"
                   >
                     {s.name}
-                  </a>
+                  </HashLink>
                 ))}
               </div>
             )}
           </div>
 
-          <a href="/About" className="hover:text-blue-400 transition text-sm md:text-base">
+          <HashLink to="/About" className="hover:text-blue-400 transition text-sm md:text-base">
             About us
-          </a>
+          </HashLink>
 
-          <a href="/contact" className="hover:text-blue-400 transition text-sm md:text-base">
+          <HashLink to="/contact" className="hover:text-blue-400 transition text-sm md:text-base">
             Contact
-          </a>
+          </HashLink>
 
           <a
             href="https://wa.me/+447462163163"
@@ -85,9 +86,9 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="lg:hidden p-3 bg-[#0d1525] border-t border-slate-800">
           <div className="flex flex-col px-6 py-4 space-y-4 text-white">
-            <a href="/" className="hover:text-blue-400 transition text-sm">
+            <HashLink to="/" className="hover:text-blue-400 transition text-sm">
               Home
-            </a>
+            </HashLink>
 
             <details className="group">
               <summary className="flex items-center gap-1 cursor-pointer hover:text-blue-400 text-sm">
@@ -95,24 +96,24 @@ export default function Navbar() {
               </summary>
               <div className="flex flex-col pl-4 mt-2 space-y-2">
                 {services.map((s) => (
-                  <a
+                  <HashLink
                     key={s.name}
-                    href={s.href}
+                    to={s.href}
                     className="text-gray-300 hover:text-blue-400 text-sm"
                   >
                     {s.name}
-                  </a>
+                  </HashLink>
                 ))}
               </div>
             </details>
 
-            <a href="/about" className="hover:text-blue-400 transition text-sm">
+            <HashLink href="/about" className="hover:text-blue-400 transition text-sm">
               About us
-            </a>
+            </HashLink>
 
-            <a href="/contact" className="hover:text-blue-400 transition text-sm">
+            <HashLink to="/contact" className="hover:text-blue-400 transition text-sm">
               Contact
-            </a>
+            </HashLink>
 
             <a
               href="https://wa.me/+447462163163?text=Hi%20Shahz%20Tyres"
