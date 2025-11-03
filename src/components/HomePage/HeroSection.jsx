@@ -18,8 +18,8 @@ export default function HeroSection() {
   return (
     <div className="bg-slate-900">
     <section className="relative mt-10 flex items-center px-5 sm:px-6 lg:px-16 pt-16 sm:pt-12 md:pt-8 lg:pt-0 py-20">
-        {/* Gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/90 to-transparent z-10" />
+        {/* linear overlay */}
+        <div className="absolute inset-0 bg-linear-to-r from-slate-900 via-slate-900/90 to-transparent z-10" />
 
         <div className="relative z-20 sm:mt-20 w-full">
           <div className="grid lg:grid-cols-2 gap-12 items-center">

@@ -15,7 +15,7 @@ export default function AboutSection() {
 
   return (
     <div className="bg-[#0d1525] text-white pt-10">
-      <section className="relative py-20 bg-gradient-to-b from-[#111b2d] to-[#0d1525] px-6 lg:px-16">
+      <section className="relative py-20 bg-linear-to-b from-[#111b2d] to-[#0d1525] px-6 lg:px-16">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <div

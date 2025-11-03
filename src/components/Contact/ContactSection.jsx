@@ -51,7 +51,7 @@ export default function ContactSection() {
   return (
     <div className="min-h-screen bg-[#0d1525] text-white mt-15">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-b from-[#111b2d] to-[#0d1525] px-6 lg:px-16" data-aos="fade-up">
+      <section className="relative py-20 bg-linear-to-b from-[#111b2d] to-[#0d1525] px-6 lg:px-16" data-aos="fade-up">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center border border-blue-500 text-blue-400 bg-blue-500/10 px-3 py-1 rounded-full mb-6">
             <FaPhoneAlt className="w-4 h-4 mr-2" />
