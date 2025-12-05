@@ -192,6 +192,7 @@ export default function ContactSection() {
                   <FaWhatsapp className="w-5 h-5" />
                   Send via WhatsApp
                 </button>
+                  <p className="text-xs text-center dark:text-gray-300">By submitting this form, you agree to us processing your details to respond to your enquiry. Your information is handled securely and in line with our Privacy Policy.</p>
               </form>
               {formSubmitted && (
                 <p className="mt-4 text-green-400">Your message has been sent successfully!</p>
